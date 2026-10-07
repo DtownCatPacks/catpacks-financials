@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Cat Packs Financials</title>
+
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  >
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/chart.js"
+  ></script>
+
+  <link
+    rel="stylesheet"
+    href="style.css"
+  >
+</head>
+
+<body>
+
+  <main class="financials">
+
+    <!-- YEAR SELECTOR -->
+
+    <section class="year-controls">
+
+      <label for="year-select">
+        Financial Year
+      </label>
+
+      <select id="year-select"></select>
+
+    </section>
+
+
+    <!-- PROGRAM SCALE -->
+
+    <section
+      class="program-stat"
+      aria-live="polite"
+    >
+
+      <div class="stat-item">
+
+        <strong id="bags-packed">
+          3,314
+        </strong>
+
+        <span>
+          Cat Packs packed
+        </span>
+
+      </div>
+
+
+      <div
+        class="stat-divider"
+        aria-hidden="true"
+      ></div>
+
+
+      <div class="stat-item">
+
+        <strong id="schools-served">
+          6
+        </strong>
+
+        <span>
+          Schools served
+        </span>
+
+      </div>
+
+    </section>
+
+
+    <!-- INCOME -->
+
+    <section class="chart-section">
+
+      <div class="chart-heading">
+
+        <div>
+
+          <h2>
+            Where does our money come from?
+          </h2>
+
+          <p>
+            Income by source
+          </p>
+
+        </div>
+
+
+        <div class="chart-total">
+
+          <span>
+            Total income
+          </span>
+
+          <strong id="income-total">
+            $0.00
+          </strong>
+
+        </div>
+
+      </div>
+
+
+      <div class="chart-container">
+
+        <canvas id="income-chart"></canvas>
+
+      </div>
+
+    </section>
+
+
+    <!-- EXPENSES -->
+
+    <section class="chart-section">
+
+      <div class="chart-heading">
+
+        <div>
+
+          <h2>
+            How do we spend it?
+          </h2>
+
+          <p>
+            Expenses by category
+          </p>
+
+        </div>
+
+
+        <div class="chart-total">
+
+          <span>
+            Total expenses
+          </span>
+
+          <strong id="expense-total">
+            $0.00
+          </strong>
+
+        </div>
+
+      </div>
+
+
+      <div class="chart-container">
+
+        <canvas id="expense-chart"></canvas>
+
+      </div>
+
+    </section>
+
+
+    <!-- EXPLANATORY NOTE -->
+
+    <section class="financial-note">
+
+      <p>
+        These charts show cash income and expenses only.
+        Food donated to Cat Packs is tracked in our inventory,
+        but we do not assign it a dollar value, so the charts
+        do not reflect the full value of the food we pack and
+        distribute—only the food we purchase directly.
+      </p>
+
+      <p>
+        When income exceeds expenses, those funds are carried
+        forward to help cover future food purchases, enrollment
+        growth, and unexpected needs.
+      </p>
+
+    </section>
+
+  </main>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
