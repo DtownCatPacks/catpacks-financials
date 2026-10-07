@@ -43,7 +43,7 @@ const incomeColors = {
   "Donation Income":
     "#303795",
 
-  "Fundraiser Income":
+  "Fundraising Income":
     "#7C80BD"
 };
 
