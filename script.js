@@ -4,7 +4,7 @@ const financialData = {
     schoolsServed: 6,
 
     income: {
-      "Donation Income": 20607.03,
+      "Donation Income": 16148.02,
       "Fundraising Income": 5463.38
     },
 
@@ -21,7 +21,7 @@ const financialData = {
     schoolsServed: 5,
 
     income: {
-      "Donation Income": 16001.04,
+      "Donation Income": 20460.05,
       "Fundraising Income": 4623.73
     },
 
