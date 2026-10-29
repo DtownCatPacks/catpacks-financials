@@ -31,6 +31,23 @@ const financialData = {
       "Community Outreach": 0,
       "Additional Student Support": 148.05
     }
+  },
+
+  "2023–2024": {
+    bagsPacked: 3803,
+    schoolsServed: 4,
+
+    income: {
+      "Donation Income": 7828.14,
+      "Fundraising Income": 557.74
+    },
+
+    expenses: {
+      "Food Purchases": 22352.13,
+      "Operating Expenses": 2736.33,
+      "Community Outreach": 160.86,
+      "Additional Student Support": 189.07
+    }
   }
 };
 
@@ -297,6 +314,11 @@ function getChartOptions() {
       legend: {
         position:
           "bottom",
+
+        align:
+          window.innerWidth <= 650
+            ? "start"
+            : "center",
 
         labels: {
           usePointStyle:
